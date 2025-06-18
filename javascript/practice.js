@@ -46,6 +46,7 @@
 
 
 //hoisting: 
+//Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their scope (global or function scope) before code execution.In other words, you can use variables or functions before you declare them — but with rules.
 // sayHello();
 // function sayHello(){
 //     console.log("hello");
@@ -1045,3 +1046,15 @@ event.reduce((sum,num)=>sum+num,100);//we can also give second argument we can s
     const multiplyby3=makemultiplier(5);
     console.log(multiplyby2(3));
     console.log(multiplyby3(4));
+
+
+    let a=10
+    function outer(){
+        let b=20;
+        function inner(){
+            let c=30;
+            console.log(a,b,c);
+        }
+        inner();
+    }
+    outer();
