@@ -1058,3 +1058,7 @@ event.reduce((sum,num)=>sum+num,100);//we can also give second argument we can s
         inner();
     }
     outer();
+
+
+
+    
